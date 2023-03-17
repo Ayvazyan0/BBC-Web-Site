@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Header Start */
+header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+.head{
+    width: 92%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+    /*  */
+
+    /*  */
+.logo{
+    width: 10.5%;
+}
+
+.logo > a{
+    display: flex;
+    position: absolute;
+    top: 1.6%;
+}
+
+.logo > a > p{
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    font-size: 150%;
+    color: black;
+}
+    /*  */
+
+    /*  */
+.sign_in{
+    width: 15%;
+}
+
+.user-icon{
+    color: white;
+    font-size: 170%;
+    margin-top: 8%;
+}
+
+.sign_in > a{
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.sign_in > a:hover{
+    border-bottom: solid 1px red;
+}
+
+.sign_in > a > p{
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+}
+    /*  */
+
+    /*  */
+
+.menu{
+    width: 55%;
+}
+
+.menu-icon{
+    display: none !important;
+}
+
+.menu > ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu > ul > li{
+    padding: 20px 0 15px 0;
+}
+
+.menu > ul > li > a{
+    padding: 20px 0 15px 0;
+    color: white;
+}
+
+.menu > ul > li > a:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+
+.menu > ul > li > a:after{  
+    transform-origin:  0% 50%;
+ }
+
+    /*  */
+
+    /*  */
+.search{
+    width: 16%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    padding: 1%;
+}
+
+.search > a{
+    padding: 6% 40% 7% 5%;
+    color: white;
+    background-color: rgb(53, 53, 53);
+}
+/* Header End */
+
+/*  Content Start */
+    #container{
+        /* border: solid 1px; */
+        width: 92%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+     /* Welcom Content */
+   
+        /* Title */
+
+    #welcome-to-bbc-box > .welcome-title{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2%;
+    }
+        /* Title END */
+
+        /* Content */
+    
+    #welcome-content-box{
+        margin-top: 2%;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .media-flex{
+        width: 53%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #welcome-first-box{
+        width: 45.5%;
+        height: 100%;
+        background-image: url(image/welcome-first-box.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #welcome-first-box > h2{
+        padding-top: 17%;
+        color: rgb(247, 246, 246);
+    }
+
+    #welcome-center-box{
+        width: 48.8%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #welcome-center-box > .up-box{
+        background-image: url(image/welcome-center-up.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    #welcome-center-box > .under-box{
+        background-image: url(image/welcome-center-under.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    #welcome-last-box{
+        width: 48.8%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #welcome-last-box > .up-box{
+        background-image: url(image/welcome-last-up.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    #welcome-last-box > .under-box{
+        background-image: url(image/welcome-last-under.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .up-box{
+        width: 100%;
+        height: 48%;
+    }
+
+
+
+    .under-box{
+        width: 100%;
+        height: 48%;
+    }
+
+    h2{
+        margin-top: 40% !important;
+        padding-left: 2%;
+    }
+
+        /* Welcome Content  End*/
+
+        /* News content strat */
+            /* Title */
+    .news-title{
+        padding: 0px 10px 0px 10px;
+        border-left: solid 3px red;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+            /* Title end */
+            /* Content */
+    .news-content-box{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .news-content-box > div > h3{
+        margin-top: 55%;
+        font-size: 150%;
+    }
+
+    #news-first-box{
+        width: 32.3%;
+        height: 100%;
+        background-image: url(image/news-first-box.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+
+    #news-center-box{
+        width: 32.3%;
+        height: 100%;
+        background-image: url(image/news-center-box.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+
+    #news-last-box{
+        width: 32.3%;
+        height: 100%;
+        background-image: url(image/news-last-box.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+
+        /* News content end */
+
+        /* Sport content strat */
+            /* Title */
+    .sport-title{
+        padding: 0px 10px 0px 10px;
+        border-left: solid 3px rgb(238, 255, 0);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+            /* Title end */
+            /* Content */
+    .sport-content-box{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sport-content-box > div > h3{
+        margin-top: 55%;
+        font-size: 150%;
+    }
+
+    #sport-first-box{
+        width: 32.3%;
+        height: 100%;
+        background-image: url(image/sport-first-box.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+
+    #sport-center-box{
+        width: 32.3%;
+        height: 100%;
+        background-image: url(image/sport-center-box.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+
+    #sport-last-box{
+        width: 32.3%;
+        height: 100%;
+        background-image: url(image/sport-last-box.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+
+        /* Sport Content End */
+
+        /* Weather Strat */
+            /* Title */
+        
+        .weather-title{
+            color: rgb(53, 53, 53);
+        }
+            /*  */
+        .weather-content > ul{
+            display: flex;
+            padding: 20px 0px 10px 0px;
+        }
+        /* Weather End */
+    
+        /* Media start */
+@media screen and (max-width: 1125px){
+
+    .menu-icon{
+        display: block;
+        color: white;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    #welcome-content-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #welcome-first-box{
+        width: 100%;
+        height: 200%;
+    }
+
+    .media-flex{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .news-title{
+        margin-top: 69%;
+    }
+
+    .news-content-box > div > h3{
+        margin-top: 62%;
+    }
+
+    .sport-content-box > div > h3{
+        margin-top: 62%;
+    }
+}
