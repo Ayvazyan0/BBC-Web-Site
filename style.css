@@ -58,8 +58,17 @@ header{
     padding-bottom: 5%;
 }
 
-.sign_in > a:hover{
-    border-bottom: solid 1px red;
+.sign_in:after{
+    display:block;
+    content: '';
+    border-bottom: solid 1px #fd0000;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.sign_in:hover:after{
+    transform: scaleX(1);
+    transform-origin:  0% 50%;
 }
 
 .sign_in > a > p{
@@ -93,18 +102,19 @@ header{
     color: white;
 }
 
-.menu > ul > li > a:after{
+.menu > ul > li:after{
     display:block;
     content: '';
-    border-bottom: solid 3px #019fb6;  
+    border-bottom: solid 1px #fd0000;  
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
 }
 
 
-.menu > ul > li > a:after{  
+.menu > ul > li:hover:after{  
+    transform: scaleX(1);
     transform-origin:  0% 50%;
- }
+}
 
     /*  */
 
@@ -140,7 +150,7 @@ header{
         justify-content: space-between;
         padding-top: 2%;
     }
-        /* Title END */
+        /*  */
 
         /* Content */
     
@@ -166,9 +176,18 @@ header{
         background-size: cover;
     }
 
-    #welcome-first-box > h2{
-        padding-top: 17%;
-        color: rgb(247, 246, 246);
+    /* #welcome-first-box:hover{
+        background-color: rgba(228, 0, 0, 0.5);
+    } */
+
+    #welcome-first-box > a > h2{
+        font-size: 150%; 
+        padding: 50% 2% 2% 2%;
+        color: rgb(180, 179, 179);
+    }
+
+    #welcome-first-box > a > h2:hover{
+        background-color: rgba(230, 230, 230, 0.2);
     }
 
     #welcome-center-box{
@@ -183,7 +202,16 @@ header{
         background-image: url(image/welcome-center-up.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        color: white;
+    }
+
+    #welcome-center-box > .up-box > a > h2{
+        font-size: 150%; 
+        padding: 30% 2% 2% 2%;
+        color: rgb(180, 179, 179);
+    }
+
+    #welcome-center-box > .up-box > a > h2:hover{
+        background-color: rgba(230, 230, 230, 0.2);
     }
 
     #welcome-center-box > .under-box{
@@ -193,12 +221,32 @@ header{
         color: white;
     }
 
+    #welcome-center-box > .under-box > a > h2{
+        font-size: 150%; 
+        padding: 30% 2% 2% 2%;
+        color: rgb(180, 179, 179);
+    }
+
+    #welcome-center-box > .under-box > a > h2:hover{
+        background-color: rgba(230, 230, 230, 0.2);
+    }
+
     #welcome-last-box{
         width: 48.8%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+    }
+
+    #welcome-last-box > .up-box > a > h2{
+        font-size: 150%; 
+        padding: 30% 2% 2% 2%;
+        color: rgb(180, 179, 179);
+    }
+
+    #welcome-last-box > .up-box > a > h2:hover{
+        background-color: rgba(230, 230, 230, 0.2);
     }
 
     #welcome-last-box > .up-box{
@@ -215,6 +263,16 @@ header{
         color: white;
     }
 
+    #welcome-last-box > .under-box > a > h2{
+        font-size: 150%; 
+        padding: 30% 2% 2% 2%;
+        color: rgb(180, 179, 179);
+    }
+
+    #welcome-last-box > .under-box > a > h2:hover{
+        background-color: rgba(230, 230, 230, 0.2);
+    }
+
     .up-box{
         width: 100%;
         height: 48%;
@@ -227,10 +285,6 @@ header{
         height: 48%;
     }
 
-    h2{
-        margin-top: 40% !important;
-        padding-left: 2%;
-    }
 
         /* Welcome Content  End*/
 
@@ -242,18 +296,13 @@ header{
         margin-top: 10px;
         margin-bottom: 10px;
     }
-            /* Title end */
+            /* */
             /* Content */
     .news-content-box{
         width: 100%;
         height: 400px;
         display: flex;
         justify-content: space-between;
-    }
-
-    .news-content-box > div > h3{
-        margin-top: 55%;
-        font-size: 150%;
     }
 
     #news-first-box{
@@ -264,6 +313,16 @@ header{
         background-size: 100% 50%;
     }
 
+    #news-first-box > a > h3{
+        font-size: 150%; 
+        padding: 50% 0% 2% 0%;
+        color: rgb(0, 0, 0);
+    }
+
+    #news-first-box > a > h3:hover{
+        background-color: rgba(230, 230, 230, 0.2);
+    }
+
     #news-center-box{
         width: 32.3%;
         height: 100%;
@@ -272,12 +331,32 @@ header{
         background-size: 100% 50%;
     }
 
+    #news-center-box > a > h3{
+        font-size: 150%; 
+        padding: 50% 0% 2% 0%;
+        color: rgb(0, 0, 0);
+    }
+
+    #news-center-box > a > h3:hover{
+        background-color: rgba(230, 230, 230, 0.2);
+    }
+
     #news-last-box{
         width: 32.3%;
         height: 100%;
         background-image: url(image/news-last-box.jpg);
         background-repeat: no-repeat;
         background-size: 100% 50%;
+    }
+
+    #news-last-box > a > h3{
+        font-size: 150%; 
+        padding: 50% 0% 2% 0%;
+        color: rgb(0, 0, 0);
+    }
+
+    #news-last-box > a > h3:hover{
+        background-color: rgba(230, 230, 230, 0.2);
     }
 
         /* News content end */
@@ -290,18 +369,13 @@ header{
         margin-top: 10px;
         margin-bottom: 10px;
     }
-            /* Title end */
+            /*  */
             /* Content */
     .sport-content-box{
         width: 100%;
         height: 400px;
         display: flex;
         justify-content: space-between;
-    }
-
-    .sport-content-box > div > h3{
-        margin-top: 55%;
-        font-size: 150%;
     }
 
     #sport-first-box{
@@ -312,6 +386,16 @@ header{
         background-size: 100% 50%;
     }
 
+    #sport-first-box > a > h3{
+        font-size: 150%; 
+        padding: 50% 0% 2% 0%;
+        color: rgb(0, 0, 0);
+    }
+
+    #sport-first-box > a > h3:hover{
+        background-color: rgba(230, 230, 230, 0.2);
+    }
+
     #sport-center-box{
         width: 32.3%;
         height: 100%;
@@ -320,12 +404,32 @@ header{
         background-size: 100% 50%;
     }
 
+    #sport-center-box > a > h3{
+        font-size: 150%; 
+        padding: 50% 0% 2% 0%;
+        color: rgb(0, 0, 0);
+    }
+
+    #sport-center-box > a > h3:hover{
+        background-color: rgba(230, 230, 230, 0.2);
+    }
+
     #sport-last-box{
         width: 32.3%;
         height: 100%;
         background-image: url(image/sport-last-box.webp);
         background-repeat: no-repeat;
         background-size: 100% 50%;
+    }
+
+    #sport-last-box > a > h3{
+        font-size: 150%; 
+        padding: 50% 0% 2% 0%;
+        color: rgb(0, 0, 0);
+    }
+
+    #sport-last-box > a > h3:hover{
+        background-color: rgba(230, 230, 230, 0.2);
     }
 
         /* Sport Content End */
